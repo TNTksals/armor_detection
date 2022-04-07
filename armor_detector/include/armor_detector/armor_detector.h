@@ -51,7 +51,7 @@ public:
 
 
 /*
- *   @ This class process image and publishe pose
+ *   @ This class process image and publish pose
  */
 class Processor : public nodelet::Nodelet
 {
