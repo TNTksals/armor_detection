@@ -51,7 +51,7 @@ public:
 
 
 /*
- *   @ This class
+ *   @ This class process image and publishe pose
  */
 class Processor : public nodelet::Nodelet
 {
@@ -70,22 +70,22 @@ private:
   std::vector<ArmorDescriptor> armors_;
 
   // Pre-treatment
-  int brightness_threshold_ = 100;
+  int brightness_threshold_{};
 
   // Filter lights
-  float light_min_area_ = 30;
-  float light_contour_min_solidity_ = 0.5;
-  float light_max_ratio_ = 1.0;
+  float light_min_area_{};
+  float light_contour_min_solidity_{};
+  float light_max_ratio_{};
 
   // Filter pairs
-  float light_max_angle_diff_ = 7.0;
-  float light_max_height_diff_ratio_ = 0.4;
-  float light_max_y_diff_ratio_ = 2.0;
-  float light_min_x_diff_ratio_ = 0.5;
+  float light_max_angle_diff_{};
+  float light_max_height_diff_ratio_{};
+  float light_max_y_diff_ratio_{};
+  float light_min_x_diff_ratio_{};
 
   // Filter armor
-  float armor_min_aspect_ratio_ = 1.0;
-  float armor_max_aspect_ratio_ = 0.5;
+  float armor_min_aspect_ratio_{};
+  float armor_max_aspect_ratio_{};
 
 public:
   Processor();
