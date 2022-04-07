@@ -52,9 +52,9 @@ rosrun rqt_reconfigure rqt_reconfigure
 
 ## Contact Information
 
-[ROS]: http://www.ros.org
+\[ ROS \]: http://www.ros.org
 
-[rviz]: http://wiki.ros.org/rviz
+\[ rviz \]: http://wiki.ros.org/rviz
 
-[OpenCV]: https://opencv.org/
+\[ OpenCV \]: https://opencv.org/
 
