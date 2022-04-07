@@ -39,8 +39,8 @@ void Processor::initialize(ros::NodeHandle& nh)
   param_cfg_cb_ = boost::bind(&Processor::paramconfigCB, this, _1, _2);
   param_cfg_srv_->setCallback(param_cfg_cb_);
   it_ = std::make_shared<image_transport::ImageTransport>(nh_);
-  cam_sub_ = it_->subscribeCamera("/galaxy_camera/image_raw", 1, &Processor::onFrameCb, this);
-  image_pub_ = it_->advertise("/image_process/output_image", 1);
+  cam_sub_ = it_->subscribeCamera("/galaxy_camera/image_raw", 100, &Processor::onFrameCb, this);
+  image_pub_ = it_->advertise("/image_process/output_image", 100);
 }
 
 void Processor::onFrameCb(const sensor_msgs::ImageConstPtr &img, const sensor_msgs::CameraInfoConstPtr &info)
