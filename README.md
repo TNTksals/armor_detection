@@ -36,11 +36,11 @@ mon launch armor_detector armor_detector.launch
 
 check the image on rqt_image_view and the tf on rviz.
 
-![image-20220408013500901](/home/kslas/snap/typora/57/.config/Typora/typora-user-images/image-20220408013500901.png)
+![image_view](https://user-images.githubusercontent.com/89313083/162264700-22995e37-ce1b-4374-a5b4-8a4e665b12c5.png)
 
 
 
-![image-20220408013620908](/home/kslas/snap/typora/57/.config/Typora/typora-user-images/image-20220408013620908.png)
+![rviz](https://user-images.githubusercontent.com/89313083/162264738-f22495a9-f79b-40c4-ae91-30a4269a9b81.png)
 
 2. Adjust the params by rqt_reconfigure:
 
@@ -48,7 +48,7 @@ check the image on rqt_image_view and the tf on rviz.
 rosrun rqt_reconfigure rqt_reconfigure
 ```
 
-![image-20220408013702105](/home/kslas/snap/typora/57/.config/Typora/typora-user-images/image-20220408013702105.png)
+![dynamic_reconfigure](https://user-images.githubusercontent.com/89313083/162264803-d63b06b3-6c92-4739-be31-585504e339ca.png)
 
 ## Contact Information
 
