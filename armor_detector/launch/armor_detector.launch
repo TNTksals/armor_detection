@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="rosbag" type="play" name="rosbag" args=" -l $(find armor_detector)/bag/big_armor.bag"/>
+    <node pkg="nodelet" type="nodelet" name="standalone_nodelet" args="manager" output="screen">
+            <param name="image_transport" value="compressed"/>
+    </node>
+    <node pkg="nodelet" type="nodelet" name="processor" args="load armor_detector/Processor standalone_nodelet" output="screen"/>
+    <node pkg="rqt_image_view" type="rqt_image_view" name="rqt_image_view"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find armor_detector)/rviz/armor_detector.rviz" required="true"/>
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure"/>
+</launch>

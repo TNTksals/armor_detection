@@ -1,0 +1,9 @@
+<library path="lib/libarmor_detector">
+    <class name="armor_detector/Processor"
+           type="Processor"
+           base_class_type="nodelet::Nodelet">
+        <description>
+            This is a nodelet
+        </description>
+    </class>
+</library>
