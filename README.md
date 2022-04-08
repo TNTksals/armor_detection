@@ -15,13 +15,13 @@ Dependencies:
 
 1. Get the source 
 
-```bash
+```
 git clone git@github.com:TNTksals/vision-armor-detection.git
 ```
 
 2. Build in your workspace
 
-```bash
+```
 catkin build
 source ./devel/setup.bash
 ```
@@ -30,7 +30,7 @@ source ./devel/setup.bash
 
 1. Using [rosmon](http://wiki.ros.org/rosmon), run
 
-```bash
+```
 mon launch armor_detector armor_detector.launch
 ```
 
@@ -44,7 +44,7 @@ check the image on rqt_image_view and the tf on rviz.
 
 2. Adjust the params by rqt_reconfigure:
 
-```bash
+```
 rosrun rqt_reconfigure rqt_reconfigure
 ```
 
