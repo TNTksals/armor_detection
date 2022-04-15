@@ -104,7 +104,7 @@ ArmorDescriptor::ArmorDescriptor(const LightDescriptor& left_light, const LightD
   light_pairs_[0] = left_light.rect();
   light_pairs_[1] = right_light.rect();
 
-  Size left_light_size(static_cast<int>(light_pairs_[0].size.width), static_cast<int>(light_pairs_[1].size.height * 2));
+  Size left_light_size(static_cast<int>(light_pairs_[0].size.width), static_cast<int>(light_pairs_[0].size.height * 2));
   Size right_light_size(static_cast<int>(light_pairs_[1].size.width), static_cast<int>(light_pairs_[1].size.height * 2));
   RotatedRect left_light_rect(light_pairs_[0].center, left_light_size, light_pairs_[0].angle);
   RotatedRect right_light_rect(light_pairs_[1].center, right_light_size, light_pairs_[1].angle);
